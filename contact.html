@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Be Craftee</title>
+<meta name="description" content="Get in touch with Be Craftee to order a piece or ask a question.">
+<meta name="theme-color" content="#4b5d45">
+<link rel="icon" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/images/logo.jpg" alt="Be Craftee logo">
+      <span>Be Craftee</span>
+    </a>
+    <nav class="main-nav" data-main-nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop the makes</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="toggles">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle type="button" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container about-grid">
+      <div>
+        <p style="font-family:var(--font-display);font-size:1.3rem;color:var(--plum);margin:0 0 4px;">say hello</p>
+        <h1>Let's talk yarn.</h1>
+        <p class="wide">Whether you want to order a piece, ask about custom colours, or just say hi — this goes straight to my inbox. I usually reply within a day or two.</p>
+
+        <form data-contact-form action="mailto:hello@becraftee.example" method="GET" enctype="text/plain">
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" data-form-status></p>
+          <p class="form-note">This opens your email app with the message pre-filled — Be Craftee doesn't run a server, so nothing is sent silently in the background.</p>
+        </form>
+      </div>
+
+      <div>
+        <h3>Other ways to reach me</h3>
+        <p>Instagram is where I post new makes first, usually before they make it to the shop page.</p>
+        <div class="socials" style="margin-bottom:20px;">
+          <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="mailto:hello@becraftee.example" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+        <img src="assets/images/bouquet-keyring.jpg" alt="Forget-me-not bouquet keyring" loading="lazy" style="border-radius:6px;transform:rotate(2deg);box-shadow:0 12px 26px -16px var(--shadow);">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="Be Craftee logo"><span>Be Craftee</span></a>
+        <p>Handmade crochet bookmarks, charms and keyrings, made in small batches.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="shop.html">Shop the makes</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Say hello</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:hello@becraftee.example">hello@becraftee.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Be Craftee. Made by hand, one loop at a time.</span>
+      <span>Built with HTML, CSS &amp; JS for SEIT2270</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
